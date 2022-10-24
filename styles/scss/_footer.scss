@@ -1,0 +1,31 @@
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 1.2rem;
+    color: #fff;
+    position: relative;
+
+    .back-to-top {
+        color: #fff;
+        position: absolute;
+        right: .5rem;
+        bottom: 0;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            transform: translateY(-5px);
+        }
+        @include media-breakpoint-down(md) {
+            bottom: 40px;
+        }
+        i {
+            font-size: 3.5rem;
+            color: #fff;
+
+        }
+    }
+
+    .copy {
+        margin-top: 1rem;
+    }
+}
