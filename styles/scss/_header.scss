@@ -57,11 +57,18 @@ header {
         }
         .navbar-collapse {
             justify-content: end;
+            @include media-breakpoint-down(lg) {
+                padding-top: 2rem;
+            }
             .navbar-nav {
                 .nav-link {
                     color: #fff;
                     margin-right: 1rem;
                     font-size: 1.5rem;
+                    @include media-breakpoint-down(lg) {
+                        text-align: center;
+                        font-size: 1.75rem;
+                    }
                 }
             }
         }

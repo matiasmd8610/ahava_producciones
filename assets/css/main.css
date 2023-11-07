@@ -10129,6 +10129,13 @@ section {
   }
 }
 
+a {
+  color: #c257b5;
+}
+a:hover {
+  color: #222;
+}
+
 .btn {
   text-transform: uppercase;
   border: 2px solid #222;
@@ -10140,13 +10147,13 @@ section {
   transition: all 0.2s ease;
 }
 .btn-primary {
+  background-color: #f5f5f5;
+  color: #222 !important;
+}
+.btn-primary:hover {
   background-color: transparent;
   border-color: #fff !important;
   color: #fff !important;
-}
-.btn-primary:hover {
-  background-color: #f5f5f5;
-  color: #222 !important;
 }
 
 h2, .h2 {
@@ -10171,7 +10178,7 @@ h2, .h2 {
   color: #FFFFFF;
   font-weight: 700;
   opacity: 0.4;
-  font-size: 130px;
+  font-size: 115px;
   line-height: 18px;
   text-shadow: 0px 2px 6px rgba(52, 52, 52, 0.35);
   -webkit-transform: translateX(-50%);
@@ -10281,10 +10288,21 @@ header .navbar .navbar-brand img.logo-sticky {
 header .navbar .navbar-collapse {
   justify-content: end;
 }
+@media (max-width: 991.98px) {
+  header .navbar .navbar-collapse {
+    padding-top: 2rem;
+  }
+}
 header .navbar .navbar-collapse .navbar-nav .nav-link {
   color: #fff;
   margin-right: 1rem;
   font-size: 1.5rem;
+}
+@media (max-width: 991.98px) {
+  header .navbar .navbar-collapse .navbar-nav .nav-link {
+    text-align: center;
+    font-size: 1.75rem;
+  }
 }
 header .navbar .navbar-toggler {
   min-height: 40px;
@@ -10324,7 +10342,7 @@ header .navbar .navbar-toggler .navbar-toggler-icon span:last-child {
 footer {
   background-color: #000;
   text-align: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
   font-size: 1.2rem;
   color: #fff;
   position: relative;
@@ -10350,6 +10368,7 @@ footer .back-to-top i {
 }
 footer .copy {
   margin-top: 1rem;
+  margin-bottom: 0;
 }
 
 .hero {
@@ -10537,12 +10556,12 @@ footer .copy {
 @media (min-width: 992px) {
   .gallery #image-gallery {
     margin-top: 5rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 .gallery #image-gallery a {
   width: 100%;
-  height: 250px;
+  height: 300px;
   position: relative;
   overflow: hidden;
 }
@@ -10569,9 +10588,46 @@ footer .copy {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center center;
   transition: all 1s ease;
   z-index: 1;
+}
+
+/*CONTACT
+***********************************************/
+.contact {
+  position: relative;
+}
+.contact .contact-info--wrapper {
+  margin: 3rem auto 0;
+  max-width: 400px;
+}
+@media (min-width: 992px) {
+  .contact .contact-info--wrapper {
+    margin: 5rem auto 0;
+  }
+}
+.contact .contact-info--wrapper .contact-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+@media (min-width: 992px) {
+  .contact .contact-info--wrapper .contact-info {
+    font-size: 2rem;
+    padding-left: 2rem;
+  }
+}
+.contact .contact-info--wrapper .contact-info i, .contact .contact-info--wrapper .contact-info img {
+  font-size: 2.25rem;
+  margin-right: 1rem;
+  color: #c257b5;
+}
+@media (min-width: 992px) {
+  .contact .contact-info--wrapper .contact-info i, .contact .contact-info--wrapper .contact-info img {
+    font-size: 2.75rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

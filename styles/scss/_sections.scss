@@ -179,11 +179,11 @@
         margin-top: 3rem;
         @include media-breakpoint-up(lg) {
           margin-top: 5rem;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(4, 1fr);
         }
         a {
           width: calc(100%);
-          height: 250px;
+          height: 300px;
           position: relative;
           overflow: hidden;
     
@@ -214,10 +214,45 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: center;
+            object-position: center center;
             transition: all 1s ease;
             z-index: 1;
           }
         }
       }
+}
+
+/*CONTACT
+***********************************************/
+.contact {
+  position: relative;
+
+  .contact-info--wrapper {
+    margin: 3rem auto 0;
+    max-width: 400px;
+    @include media-breakpoint-up(lg) {
+      margin: 5rem auto 0;
+    }
+
+    .contact-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      font-size: 1.75rem;
+      @include media-breakpoint-up(lg) {
+        font-size: 2rem;
+          padding-left: 2rem;
+      }
+      
+      i, img {
+          font-size: 2.25rem;
+          margin-right: 1rem;
+          color: $color-secondary;
+          @include media-breakpoint-up(lg) {
+            font-size: 2.75rem;
+          }
+      }
+    }
+
+  }
 }
